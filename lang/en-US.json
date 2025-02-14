@@ -1,0 +1,120 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for AtheiosModule.",
+	"text": {
+		"plugins": {
+			"atheiosteam_atheiosmodule": {
+				"name": "Atheios Module",
+				"description": "A third party module to support interfacing the Atheios blockchain.",
+				"help-url": "https://docs.atheios.org/construct3",
+				"properties": {
+					"apiKey": {
+						"name": "apiKey",
+						"desc": "apiKey"
+					},
+					"apiSecret": {
+						"name": "apiSecret",
+						"desc": "apiSecret"
+					},
+					"local": {
+						"name": "local",
+						"desc": "local"
+					},
+					"testapi": {
+						"name": "testapi",
+						"desc": "testapi"
+					}
+
+				},
+				"aceCategories": {
+					"connection": "Connection"
+				},
+				"conditions": {
+					"oninit": {
+						"list-name": "On Init",
+						"display-text": "On Init",
+						"description": "Triggered when the SDK is finished initialising."
+					},
+					"onmessage": {
+						"list-name": "On Message",
+						"display-text": "On Message",
+						"description": "Triggered when a message object is sent from the server to the client."
+					},
+					"onresponse": {
+						"list-name": "On Response",
+						"display-text": "On Response",
+						"description": "Triggered when a response object is sent from the server to the client."
+					}
+				},
+				"actions": {
+					"do-alert": {
+						"list-name": "Do alert",
+						"display-text": "Do alert",
+						"description": "Do a dummy alert."
+					},
+					"initpreview": {
+						"list-name": "InitPreview",
+						"display-text": "InitPreview",
+						"description": "Initialise the SDK and connect to the preview server."
+					},
+					"sendwithdata": {
+						"list-name": "SendWithData",
+						"display-text": "Send With Data {0} {1}",
+						"description": "Send with Data to Atheios servers from client.",
+						"params": {
+							"requesttype": {
+								"name": "RequestType",
+								"desc": "Request Type."
+							},
+							"jsondata": {
+								"name": "JSONData",
+								"desc": "JSON as a string."
+							}
+						}
+					},
+					"initlive": {
+						"list-name": "InitLive",
+						"display-text": "InitLive",
+						"description": "Initialise the SDK and connect to the live server."
+					},
+					"sendwithdataid": {
+						"list-name": "SendWithDataId",
+						"display-text": "Send With Data {0} {1} {2}",
+						"description": "Send with Data to Atheios servers from client.",
+						"params": {
+							"requestid": {
+								"name": "RequestId",
+								"desc": "User Request Id"
+							},
+							"jsondata": {
+								"name": "JSONData",
+								"desc": "JSON Data"
+							},
+							"requesttype": {
+								"name": "RequestType",
+								"desc": "Request Type"
+							}
+						}
+					}
+				},
+				"expressions": {
+					"lastmessage": {
+						"translated-name": "lastmessage",
+						"description": "Last Message received from Atheios."
+					},
+					"lastresponse": {
+						"translated-name": "lastresponse",
+						"description": "Last Message received from Atheios."
+					},
+					"apikey": {
+						"translated-name": "apikey",
+						"description": "API Key of the game defined in properties."
+					}
+
+
+
+				}
+			}
+		}
+	}
+}
